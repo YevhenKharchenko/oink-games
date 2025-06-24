@@ -1,0 +1,43 @@
+.description-bg-wrapper {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
+}
+
+.description-container {
+}
+
+.description-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  word-break: break-word;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 712px;
+    margin: 0 auto;
+  }
+}
+
+.description-bubbles-img {
+  position: absolute;
+  top: 26px;
+  left: 20px;
+
+  @include media(desktop) {
+    top: 75px;
+    left: 180px;
+  }
+}

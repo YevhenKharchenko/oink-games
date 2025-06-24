@@ -1,0 +1,87 @@
+.hero-section {
+  padding-top: 141px;
+  padding-bottom: 358px;
+  background-image: url(../img/hero/hero-title-bg-mob.png),
+    url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 60px center, top center;
+  background-size: auto, auto;
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+
+  @include media(desktop) {
+    padding-top: 426px;
+    padding-bottom: 433px;
+    background-image: url(../img/hero/hero-title-bg-desk.png),
+      url(../img/hero/hero-bg-desk.jpg);
+    background-position: top 340px center, top center;
+    max-width: 1440px;
+  }
+}
+
+.hero-title {
+  font-family: 'Quando', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  max-width: 251px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    max-width: 561px;
+    margin-bottom: 31px;
+  }
+}
+
+.hero-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  max-width: 251px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 561px;
+  }
+}
+
+.hero-girl-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.hero-diver-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include media(desktop) {
+    top: 164px;
+  }
+}
+
+.hero-dog-img {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+
+  @include media(desktop) {
+    bottom: 81px;
+    right: 197px;
+  }
+}

@@ -1,0 +1,106 @@
+.context-menu {
+  display: none;
+  background-color: #004598;
+  background-image: url(../img/hero/hero-title-bg-mob.png),
+    url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 60px center, top center;
+  background-size: auto, 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: none;
+  z-index: 10;
+}
+
+.context-bg-wrapper {
+  padding-top: 20px;
+  padding-bottom: 275px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.context-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 61px;
+}
+
+.close-btn {
+  display: none;
+  border-radius: 19px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #004598;
+  z-index: 1;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.context-diver-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.context-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.context-list-link {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+    font-weight: 700;
+  }
+}
+
+.context-big-puzzle-img {
+  margin-left: auto;
+}
+
+.is-open {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
