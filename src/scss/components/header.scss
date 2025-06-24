@@ -8,30 +8,25 @@
   z-index: 10;
 
   @include media(desktop) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    background: #0c2f54;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 .nav {
   background: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   @include media(desktop) {
-    background: #fff;
-    border-radius: 20px;
-    gap: 40px;
-    padding: 15px 110px;
   }
 }
 
 .header-logo {
-  display: none;
-
   @include media(desktop) {
-    display: block;
+    display: none;
   }
 }
 
@@ -41,17 +36,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 38px;
     width: 100%;
   }
 }
 
 .nav-list-link {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 }
 
@@ -59,9 +53,18 @@
   font-weight: 700;
 }
 
+.header-google-btn {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+
 .nav-btn {
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
-  border-radius: 19px;
+  border-radius: 30px;
   width: 50px;
   height: 50px;
   display: flex;

@@ -1,6 +1,6 @@
 .footer {
   box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.15);
-  background: #fff;
+  background: #0c2f54;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -14,23 +14,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 19px;
+  gap: 16px;
 
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
+    gap: 19px;
   }
 }
 
 .footer-link {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #000;
+  color: #fff;
   transition: color 0.3s ease-in-out;
 
   &:hover,
@@ -43,12 +44,13 @@
 }
 
 .footer-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  color: #000;
+  text-align: center;
+  color: #fff;
   text-align: center;
 
   @include media(desktop) {
