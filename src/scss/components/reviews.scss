@@ -1,48 +1,8 @@
 .reviews-section {
-  background: #fff;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-  }
-}
-
-.reviews-bg-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  max-width: 375px;
-  margin: 0 auto;
-  position: relative;
-
-  @include media(desktop) {
-    max-width: 1440px;
-    padding-top: 50px;
-    padding-bottom: 70px;
-  }
-}
-
-.reviews-container {
-}
-
-.reviews-title {
-  font-family: 'Quando', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
-  text-align: center;
-  color: #000;
-
-  @include media(desktop) {
-    margin-bottom: 70px;
-  }
-}
-
-.reviews-bubbles-img {
-  position: absolute;
-  top: 0;
-  left: 6px;
-
-  @include media(desktop) {
-    top: -35px;
-    left: 89px;
+    padding-bottom: 120px;
   }
 }
 
@@ -54,16 +14,20 @@
 
   @include media(desktop) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
 
 .reviews-list-item {
-  box-shadow: 5px -5px 0 0 rgba(0, 69, 152, 0.25);
-  background: #004598;
-  border-radius: 8px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
   padding: 16px;
-  max-width: 336px;
+  max-width: 316px;
+  min-height: 164px;
 
   @include media(desktop) {
     max-width: 344px;
@@ -71,32 +35,23 @@
   }
 }
 
-.reviews-middle-item {
-  @include media(desktop) {
-    position: relative;
-    bottom: 30px;
-  }
-}
-
-.reviews-name {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #fff;
-  margin-bottom: 16px;
+.reviews-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0c2f54;
 
   @include media(desktop) {
     font-size: 20px;
   }
 }
 
-.reviews-text {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
+.reviews-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0c2f54;
+  margin-top: auto;
 
   @include media(desktop) {
     font-size: 20px;

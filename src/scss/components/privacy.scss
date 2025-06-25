@@ -1,28 +1,28 @@
 .policy-section {
-  padding-top: 90px;
-  padding-bottom: 61px;
+  padding-top: 100px;
+  padding-bottom: 47px;
 
   @include media(desktop) {
-    padding-top: 180px;
-    padding-bottom: 62px;
+    padding-top: 160px;
+    padding-bottom: 26px;
   }
 }
 
 .policy-subtitle {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  color: #0c2f54;
   margin-bottom: 1em;
 }
 
 .policy-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  color: #0c2f54;
 
   &:not(:last-child) {
     margin-bottom: 1em;

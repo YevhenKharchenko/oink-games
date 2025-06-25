@@ -1,57 +1,26 @@
 .gallery-section {
-}
+  padding-bottom: 80px;
 
-.section-title {
-}
-
-.gallery-section-wrapper {
-}
-
-.container {
-}
-
-.gallery-container {
+  @include media(desktop) {
+    padding-bottom: 120px;
+  }
 }
 
 .gallery-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.arrow-btn {
-  background: #fff;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 19px;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
+  gap: 24px;
 
   @include media(desktop) {
-    display: none;
-  }
-}
-
-.arrow-icon {
-}
-
-.gallery-list-desk {
-  display: none;
-
-  @include media(desktop) {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
     justify-content: center;
-    align-items: center;
-    gap: 16px;
   }
 }
 
-.gallery-list-item-desk {
+.gallery-list-item {
+  @include media(desktop) {
+  }
 }

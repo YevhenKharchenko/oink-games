@@ -1,75 +1,76 @@
 .play-section {
-  padding-top: 80px;
-  padding-bottom: 403px;
-  max-width: 375px;
-  margin: 0 auto;
-  position: relative;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 120px;
-    padding-bottom: 70px;
-    max-width: 1440px;
+    padding-bottom: 120px;
   }
 }
 
-.play-container {
+.play-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
   @include media(desktop) {
-    padding-right: 291px;
+    gap: 36px;
   }
 }
 
 .play-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 
   @include media(desktop) {
-    align-items: end;
+    gap: 36px;
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+
+.play-bottom-list {
+  @include media(desktop) {
+    justify-content: end;
   }
 }
 
 .play-list-item {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  gap: 8px;
+  gap: 24px;
 }
 
 .play-item-number {
   background: #fff;
-  border-radius: 25px;
+  border-radius: 30px;
   display: flex;
-  min-width: 50px;
-  height: 50px;
+  min-width: 54px;
+  height: 54px;
   justify-content: center;
   align-items: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  color: #0c2f54;
 }
 
 .play-item-text-wrapper {
-  box-shadow: 5px -5px 0 0 rgba(255, 255, 255, 0.25);
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px 16px;
-  max-width: 278px;
+  max-width: 258px;
 
   @include media(desktop) {
-    width: 528px;
-    max-width: 528px;
+    width: 344px;
+    max-width: 344px;
   }
 }
 
 .play-item-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #000;
-  margin-bottom: 8px;
+  font-size: 20px;
+  color: #0c2f54;
+  margin-bottom: 14px;
 
   @include media(desktop) {
     font-size: 20px;
@@ -77,34 +78,12 @@
 }
 
 .play-item-text {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: #000;
+  color: #0c2f54;
 
   @include media(desktop) {
     font-size: 20px;
-  }
-}
-
-.play-bubbles-img {
-  position: absolute;
-  top: 0;
-  right: 19px;
-
-  @include media(desktop) {
-    right: 180px;
-  }
-}
-
-.play-girl-img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @include media(desktop) {
-    left: 372px;
   }
 }

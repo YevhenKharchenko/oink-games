@@ -1,26 +1,52 @@
-.faq-bg-wrapper {
-  padding-top: 20px;
-  padding-bottom: 336px;
-  position: relative;
+.faq-section {
+  padding-bottom: 42px;
 
   @include media(desktop) {
-    padding-top: 60px;
-    padding-bottom: 59px;
-    max-width: 1440px;
-    margin: 0 auto;
+    padding-bottom: 49px;
   }
 }
 
-.faq-girl-img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.faq-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
   @include media(desktop) {
-    left: auto;
-    transform: none;
-    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.faq-img-wrapper {
+  @include media(desktop) {
+    max-width: 435px;
+  }
+}
+
+.faq-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #0c2f54;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.faq-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0c2f54;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 20px;
   }
 }
 
@@ -29,15 +55,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 .faq-list-item {
-  box-shadow: inset -5px 5px 0 0 rgba(0, 69, 152, 0.25);
-  background: #004598;
-  border-bottom: 1px solid #fff;
-  border-radius: 8px;
-  padding: 16px;
+  background: #fff;
+  border: 0px solid #000;
+  border-radius: 16px;
+  padding: 16px 24px;
   max-width: 336px;
   display: flex;
   flex-direction: column;
@@ -46,8 +71,8 @@
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    padding: 16px 32px;
-    max-width: 728px;
+    padding: 16px 16px;
+    max-width: 621px;
   }
 }
 
@@ -65,6 +90,8 @@
 }
 
 .faq-icon {
+  stroke: #0c2f54;
+
   @include media(desktop) {
     width: 50px;
     height: 50px;
@@ -72,24 +99,26 @@
 }
 
 .faq-btn-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
+  max-width: 233px;
   text-align: left;
 
   @include media(desktop) {
     font-size: 20px;
+    max-width: max-content;
   }
 }
 
 .faq-bottom-text {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -102,11 +131,11 @@
 
 .is-visible {
   margin-top: 16px;
-  max-height: 120px;
+  max-height: 500px;
   opacity: 1;
 
   @include media(desktop) {
-    max-height: 68px;
+    max-height: 100px;
   }
 }
 
